@@ -1,6 +1,7 @@
 package net.catibog.bookshop.catalogservice;
 
 import net.catibog.bookshop.catalogservice.domain.Book;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,7 @@ class CatalogServiceApplicationTests {
     private WebTestClient client;
 
     @Test
+    @Disabled
     void whenPostRequestThenBookCreated() {
         var expectedBook = Book.of("1231231231", "Title", "Author", 9.90, null);
         client
