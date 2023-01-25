@@ -1,7 +1,7 @@
-package net.catibog.catalogservice.web;
+package net.catibog.bookshop.catalogservice.web;
 
-import net.catibog.catalogservice.domain.BookNotFoundException;
-import net.catibog.catalogservice.domain.BookService;
+import net.catibog.bookshop.catalogservice.domain.BookNotFoundException;
+import net.catibog.bookshop.catalogservice.domain.BookService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

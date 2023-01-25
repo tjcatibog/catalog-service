@@ -1,8 +1,8 @@
-package net.catibog.catalogservice.web;
+package net.catibog.bookshop.catalogservice.web;
 
 import jakarta.validation.Valid;
-import net.catibog.catalogservice.domain.Book;
-import net.catibog.catalogservice.domain.BookService;
+import net.catibog.bookshop.catalogservice.domain.Book;
+import net.catibog.bookshop.catalogservice.domain.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

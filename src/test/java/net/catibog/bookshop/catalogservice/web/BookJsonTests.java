@@ -1,6 +1,6 @@
-package net.catibog.catalogservice.web;
+package net.catibog.bookshop.catalogservice.web;
 
-import net.catibog.catalogservice.domain.Book;
+import net.catibog.bookshop.catalogservice.domain.Book;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
@@ -15,7 +15,7 @@ public class BookJsonTests {
 
     @Test
     void testSerialize() throws Exception {
-        var book = new Book("1234567890", "Title", "Author", 9.90);
+        var book = Book.of("1234567890", "Title", "Author", 9.90);
         var jsonContent = json.write(book);
         assertThat(jsonContent).extractingJsonPathStringValue("@.isbn").isEqualTo(book.isbn());
         assertThat(jsonContent).extractingJsonPathStringValue("@.title").isEqualTo(book.title());
@@ -35,6 +35,6 @@ public class BookJsonTests {
             """;
         assertThat(json.parse(content))
             .usingRecursiveComparison()
-            .isEqualTo(new Book("1234567890", "Title", "Author", 9.90));
+            .isEqualTo(Book.of("1234567890", "Title", "Author", 9.90));
     }
 }

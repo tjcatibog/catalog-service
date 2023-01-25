@@ -1,7 +1,7 @@
-package net.catibog.catalogservice.web;
+package net.catibog.bookshop.catalogservice.web;
 
-import net.catibog.catalogservice.domain.BookAlreadyExistsException;
-import net.catibog.catalogservice.domain.BookNotFoundException;
+import net.catibog.bookshop.catalogservice.domain.BookAlreadyExistsException;
+import net.catibog.bookshop.catalogservice.domain.BookNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;

@@ -1,4 +1,4 @@
-package net.catibog.catalogservice.domain;
+package net.catibog.bookshop.catalogservice.domain;
 
 public class BookNotFoundException extends RuntimeException {
     public BookNotFoundException(String isbn) {
